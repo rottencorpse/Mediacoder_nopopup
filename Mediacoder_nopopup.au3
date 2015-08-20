@@ -1,7 +1,6 @@
 #NoTrayIcon
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Icon=Icon_1.ico
-#AutoIt3Wrapper_Run_Before=del %out% %outx64%
+#AutoIt3Wrapper_Icon=mediacoder.ico
 #AutoIt3Wrapper_Run_Au3Stripper=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 Opt("MustDeclareVars", 1)
