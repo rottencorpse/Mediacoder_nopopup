@@ -16,7 +16,7 @@ Mutex("MediaCoder-nopopup")
 
 While ProcessExists("MediaCoder.exe")
    If WinExists($WinTitle) Then
-      ControlSend($WinTitle, "", 1314, Execute(StringRegExpReplace(ControlGetText($WinTitle, "", 1313), $EquationRegEx, "\1")))
+      ControlSetText($WinTitle, "", 1314, Execute(StringRegExpReplace(ControlGetText($WinTitle, "", 1313), $EquationRegEx, "\1")))
       ControlClick($WinTitle, "", 2)
    EndIf
    Sleep(1000)
