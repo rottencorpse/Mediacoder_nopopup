@@ -23,7 +23,7 @@ While ProcessExists("MediaCoder.exe")
 WEnd
 
 Func Mutex($sMutexName)
-	DllCall('kernel32.dll', 'handle', 'CreateMutexW', 'struct*', 0, 'bool', True, 'wstr', $sMutexName)
-	If (DllCall("kernel32.dll", "dword", "GetLastError"))[0] = 183 Then Exit
+   DllCall('kernel32.dll', 'handle', 'CreateMutexW', 'struct*', 0, 'bool', True, 'wstr', $sMutexName)
+   If (DllCall("kernel32.dll", "dword", "GetLastError"))[0] = 183 Then Exit
 EndFunc
 
